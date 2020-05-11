@@ -19,7 +19,7 @@ describe('Storages config', () => {
         cy.refineReloadConfig()
         // Open storage dialog
         cy.refineMetadataOpen(dialogTitle)
-        cy.refineGetBind('storageSelect').find('option').should('have.length', 5)
+        cy.refineGetBind('storageSelect').find('option').should('have.length', 6)
     })
 
     it('can allow all formats', () => {

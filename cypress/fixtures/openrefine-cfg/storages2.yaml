@@ -11,10 +11,11 @@
 - name: Example FTP
   type: ftp
   enabled: true
-  username: test
-  password: example
-  host: localhost
-  directory: "/"
+  details:
+    username: test
+    password: example
+    host: localhost
+    directory: "/"
   contentTypes:
     - text/html
     - application/xlsx
