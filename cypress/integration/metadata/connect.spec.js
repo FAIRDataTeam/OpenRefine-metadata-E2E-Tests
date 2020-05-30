@@ -2,7 +2,7 @@ describe('FAIR Data Point Connection', () => {
     const projectName = 'Cypress fdp-connect test'
     const dialogTitle = 'Create metadata in FAIR Data Point'
     const repositoryName = 'My FAIR Data Point'
-    const repositoryPublisher = 'localhost'
+    const repositoryPublisher = 'Default Publisher'
     const roles = [{ name: 'admin' }, { name: 'user' }]
 
     before(() => {
