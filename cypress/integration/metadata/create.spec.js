@@ -2,8 +2,8 @@ describe('Metadata creation', () => {
     const projectName = 'Cypress metadata-create test'
     const dialogTitle = 'Create metadata in FAIR Data Point'
     const fdpUri = Cypress.env('api_url')
-    const catalogName = 'Catalog for textmining datasets'
-    const datasetName = 'Gene disease association (LUMC)'
+    const catalogName = 'Catalog for textmining datasets (draft)'
+    const datasetName = 'Gene disease association (LUMC) (draft)'
 
     const newCatalogMinimal = {
         'title': 'My catalog 001',
