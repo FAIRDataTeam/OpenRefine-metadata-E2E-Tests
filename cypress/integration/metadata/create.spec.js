@@ -110,9 +110,8 @@ describe('Metadata creation', () => {
 
         cy.refineGetBind('metadataForm').should('not.be.visible')
         cy.refineGetBind('catalogSelect').should('be.visible')
-        cy.refineGetBind('catalogSelect').contains(`${newCatalogMinimal.title} [new]`)
-
-        // TODO: Verify fields
+        cy.refineGetBind('catalogSelect').contains(newCatalogMinimal.title)
+        cy.refineGetBind('catalogSelect').contains('[new]')
     })
 
     it('can create complex catalog', () => {
@@ -141,9 +140,8 @@ describe('Metadata creation', () => {
 
         cy.refineGetBind('metadataForm').should('not.be.visible')
         cy.refineGetBind('catalogSelect').should('be.visible')
-        cy.refineGetBind('catalogSelect').contains(`${newCatalogComplex.title} [new]`)
-
-        // TODO: Verify fields
+        cy.refineGetBind('catalogSelect').contains(newCatalogComplex.title)
+        cy.refineGetBind('catalogSelect').contains('[new]')
     })
 
     it('can create minimal dataset', () => {
@@ -157,9 +155,8 @@ describe('Metadata creation', () => {
 
         cy.refineGetBind('metadataForm').should('not.be.visible')
         cy.refineGetBind('datasetSelect').should('be.visible')
-        cy.refineGetBind('datasetSelect').contains(`${newDatasetMinimal.title} [new]`)
-
-        // TODO: Verify fields
+        cy.refineGetBind('datasetSelect').contains(newDatasetMinimal.title)
+        cy.refineGetBind('datasetSelect').contains('[new]')
     })
 
     it('can create complex dataset', () => {
@@ -193,9 +190,8 @@ describe('Metadata creation', () => {
 
         cy.refineGetBind('metadataForm').should('not.be.visible')
         cy.refineGetBind('datasetSelect').should('be.visible')
-        cy.refineGetBind('datasetSelect').contains(`${newDatasetComplex.title} [new]`)
-
-        // TODO: Verify fields
+        cy.refineGetBind('datasetSelect').contains(newDatasetComplex.title)
+        cy.refineGetBind('datasetSelect').contains('[new]')
     })
 
     it('can create minimal distribution', () => {
@@ -211,9 +207,8 @@ describe('Metadata creation', () => {
 
         cy.refineGetBind('metadataForm').should('not.be.visible')
         cy.refineGetBind('distributionsList').should('be.visible')
-        cy.refineGetBind('distributionsList').contains(`${newDistributionMinimal.title} [new]`)
-
-        // TODO: Verify fields
+        cy.refineGetBind('distributionsList').contains(newDistributionMinimal.title)
+        cy.refineGetBind('distributionsList').contains('[new]')
     })
 
     it('can create complex distribution', () => {
@@ -238,8 +233,7 @@ describe('Metadata creation', () => {
 
         cy.refineGetBind('metadataForm').should('not.be.visible')
         cy.refineGetBind('distributionsList').should('be.visible')
-        cy.refineGetBind('distributionsList').contains(`${newDistributionComplex.title} [new]`)
-
-        // TODO: Verify fields
+        cy.refineGetBind('distributionsList').contains(newDistributionComplex.title)
+        cy.refineGetBind('distributionsList').contains('[new]')
     })
 })
