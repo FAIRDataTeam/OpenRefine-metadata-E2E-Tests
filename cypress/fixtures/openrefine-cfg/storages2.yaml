@@ -4,7 +4,7 @@
 # name = String for its identification
 # type = (one of: ftp, virtuoso, tripleStoreHTTP)
 # enabled = flag if currently possible to use
-# username & passwork = credentials for the storage (if applicable)
+# username & password = credentials for the storage (if applicable)
 # host = URI of the storage
 # directory = specification of location in the storage
 # contentTypes (optional) = list of allowed content types
@@ -19,3 +19,4 @@
   contentTypes:
     - text/html
     - application/xlsx
+    - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
